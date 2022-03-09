@@ -1,0 +1,453 @@
+QWidget#StatisticsAssistantClass
+{
+    /*background-color:qlineargradient(x1:0, y1:0, x2:1, y2:1 stop:0 rgb(30, 30, 30, 0.8), stop:1 rgb(50, 50, 50, 1.0));*/
+    background-color:#e02e4e7e;
+    border-radius: 3px;   
+    font-family: "Microsoft YaHei";
+}
+
+QWidget#ToastWidget
+{
+    background-color:#ff7500;
+    border-radius: 10px;   
+} 
+
+QLabel#lbl_hint
+{
+    color: #FAFAFA;
+    background-color:transparent;
+    font: normal normal 16px "微软雅黑";
+} 
+
+QToolButton#tb_btn_min
+{
+    background:transparent;
+    background-image:url(:/title_bar/resource/icon/title_bar/min_normal.png);
+}
+
+QToolButton#tb_btn_min::hover
+{
+    background:transparent;
+    background-image:url(:/title_bar/resource/icon/title_bar/min_hover.png);
+}
+
+
+QToolButton#tb_btn_restore
+{
+    background:transparent;
+    background-image:url(:/title_bar/resource/icon/title_bar/restore_normal.png);
+}
+
+QToolButton#tb_btn_restore::hover
+{
+    background:transparent;
+    background-image:url(:/title_bar/resource/icon/title_bar/restore_hover.png);
+}
+
+QToolButton#tb_btn_max
+{
+    background:transparent;
+    background-image:url(:/title_bar/resource/icon/title_bar/max_normal.png);
+}
+
+QToolButton#tb_btn_max::hover
+{
+    background:transparent;
+    background-image:url(:/title_bar/resource/icon/title_bar/max_hover.png);
+}
+
+
+QToolButton#tb_btn_close
+{
+    background:transparent;
+    background-image:url(:/title_bar/resource/icon/title_bar/close_normal.png);
+}
+
+QToolButton#tb_btn_close::hover
+{
+    background:transparent;
+    background-image:url(:/title_bar/resource/icon/title_bar/close_hover.png);
+}
+
+QPushButton:disabled
+{
+    border:none;
+    color:#FAFAFA;
+    background-color: #4c8dae;
+    font: normal normal 16px "微软雅黑";
+}
+
+QPushButton
+{
+    border:none;
+    color:#FAFAFA;
+    background-color: #00864b;
+    font: normal normal 16px "微软雅黑";
+}
+
+QPushButton:hover
+{
+    border:none;
+    color:#FAFAFA;
+    background-color: #00bc12;
+    font: normal normal 16px "微软雅黑";
+}
+
+QPushButton:pressed
+{
+    border:none;
+    color:#fafafa;
+    background-color: #ca6924;
+    font: normal normal 16px "微软雅黑";
+}
+
+QPushButton:checked
+{
+    border:none;
+    color:#fafafa;
+    background-color: #ca6924;
+    font: normal normal 16px "微软雅黑";
+}
+
+
+QPushButton:unchecked
+{
+    border:none;
+    color:#fafafa;
+    background-color: #3b2e7e;
+    font: normal normal 16px "微软雅黑";
+}
+
+QPushButton#push_btn_hex,QPushButton#push_btn_dec,QPushButton#push_btn_oct,QPushButton#push_btn_bin 
+{
+    width: 40px;
+    height: 20px;
+}
+
+
+
+QLineEdit {
+        color:#FAFAFA;
+        border-radius: 3px;
+        height: 25px;
+        border: 1px solid rgb(100, 100, 100);
+        background: #D02e4e7e;
+        font-family: "Microsoft YaHei"; /* 文本字体族 */
+	    font-size: 13pt; /* 文本字体大小 */
+}
+
+QLineEdit:!enabled {
+        color: #f0f0f0;
+        background-color:#4c8dae;
+}
+
+QLineEdit#le_recv_total_bytes,QLineEdit#le_send_send_count
+{
+    color: #fafafa;
+    background:transparent;
+}
+
+
+
+QLabel
+{
+    color:#FAFAFA;
+    font-family: "Microsoft YaHei"; /* 文本字体族 */
+	font-size: 13pt; /* 文本字体大小 */
+}
+
+
+
+
+QComboBox
+{
+	border-radius:3px;
+	background-color:transparent;
+	font: 75 9pt "Microsoft YaHei";
+    color:#fafafa;
+    border:0px ;
+	padding-top: 2px;
+	padding-left: 2px;
+
+    font-family: "Microsoft YaHei"; /* 文本字体族 */
+	font-size: 11pt; /* 文本字体大小 */
+        border: 1px solid rgb(100, 100, 100);
+}
+QComboBox:disabled
+{
+	background-color:#4c8dae;
+	font: 75 9pt "Microsoft YaHei";
+    color:#fafafa;
+}
+QComboBox:hover
+{
+    color:#202020;
+	background-color:#569834;
+}
+/*点击combox的样式*/
+QComboBox:on
+{
+	border-radius:3px;
+	background-color:#003472;
+	font: 75 10pt "Microsoft YaHei";
+    color:#fafafa;
+    border:1px solid rgb(31,156,220) ;
+}
+/*下拉框的样式*/
+QComboBox QAbstractItemView 
+{
+    outline: 0px solid gray;  /*取消选中虚线*/
+    border: 1px solid rgb(100, 100, 100);
+    font: 75 9pt "Microsoft YaHei";
+    color: #fafafa;
+    background-color: #2e4e7e; 
+    selection-background-color: #ca6924;   
+}
+ /*选中每一项高度*/
+QComboBox QAbstractItemView::item
+ { 
+	height: 25px;  
+ }
+/*选中每一项的字体颜色和背景颜色*/
+QComboBox QAbstractItemView::item:selected 
+{
+    color: #202020;
+	background-color: #f0f0f0; 
+}
+ /*下拉箭头的边框*/
+QComboBox::drop-down 
+{
+	border:none;
+}
+ /*下拉箭头样式*/
+QComboBox::down-arrow 
+{
+    right:10px;/*控制箭头左右偏移*/
+    width: 9px;  
+    height: 9px;   
+    image: url(:/arrow/resource/icon/combobox/arrow_down.png);
+}
+ /*下拉箭头点击样式*/
+QComboBox::down-arrow:on
+{
+    width: 9px;  
+    height: 9px;   
+    image: url(:/arrow/resource/icon/combobox/arrow_up.png);
+}
+
+
+
+
+
+QGroupBox 
+{
+    /* 背景渐变色*/
+    background-color: transparent;
+    /* 边框 */
+    border: 1px solid #757575; 
+
+    /* 就像墙上挂着的两个相框,margin指的是相框与相框的距离
+       padding指的是每个相框里照片与相框边框的距离 */
+    margin-top: 3px;
+    border-radius:3px;
+    font: normal normal 17px "微软雅黑";
+    subcontrol-origin: margin;
+}
+
+/* 标题设置 */
+QGroupBox::title
+{
+    color:#fafafa;
+    background-color: #ca6924;
+    subcontrol-origin: margin;
+}
+
+
+
+
+
+
+
+
+/**********页签项**********/
+QTabWidget::pane 
+{
+    border: none;
+    border-top: 2px solid rgb(0, 160, 230);
+   background: transparent;
+}
+QTabWidget::tab-bar 
+{
+        border: none;
+}
+QTabBar::tab 
+{
+        border: none;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: rgb(175, 175, 175);
+        background: rgb(255, 255, 255, 30);
+        height: 28px;
+        min-width: 130px;
+        margin-right: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+        font-family: "Microsoft YaHei"; /* 文本字体族 */
+	    font-size: 10pt; /* 文本字体大小 */
+}
+QTabBar::tab:hover {
+        background: rgb(255, 255, 255, 40);
+}
+QTabBar::tab:selected {
+        color: #fafafa;
+        background:#ca6924;
+}
+
+QTabWidget#tabWidget::pane 
+{
+        border: none;
+        background: transparent;
+        margin-top: -1px;
+}
+
+QTabBar#tabBar::tab {
+        border: 1px solid rgb(45, 45, 45);
+        border-bottom: none;
+        background: transparent;
+}
+QTabBar#tabBar::tab:hover {
+        color: white;
+}
+QTabBar#tabBar::tab:selected {
+        color: white;
+        background: rgb(57, 58, 60);
+}
+
+
+
+
+
+
+QTextEdit#te_header
+{
+    background:transparent;
+    border: 1px solid #757575;
+    color: #fafafa;
+    font-family: "consolas"; /* 文本字体族 */
+	font-size: 12pt; /* 文本字体大小 */
+}
+
+QTextEdit#te_input
+{
+    background:transparent;
+    border: none;
+    color: #fafafa;
+    font-family: "consolas"; /* 文本字体族 */
+	font-size: 12pt; /* 文本字体大小 */
+}
+
+
+QListView 
+{
+	/* 背景色 */
+	background-color:transparent;
+	
+	/* 行与行之间交替颜色不同 */
+	/* setAlternatingRowColors(true); */
+	alternate-background-color:yellow;
+	
+	/* 设置是否选中时,整行都高亮显示 */
+	show-decoration-selected:1;
+
+    color: #fafafa;
+    font-family: "Microsoft YaHei"; /* 文本字体族 */
+	font-size: 12pt; /* 文本字体大小 */
+}
+
+/* 行与行之间交替颜色不同 */
+/* setAlternatingRowColors(true); */
+QListView::item:alternate 
+{
+	background:#2add9c;
+}
+
+/* 当条目被选中时 */
+QListView::item:selected 
+{   
+    color:#202020;
+    background-color:#9ed900;
+}
+
+/* 当条目被选中,并且不是有效的 */
+QListView::item::selected:!active 
+{
+    color:#202020;
+    background-color:#9ed900;
+}
+
+/* 鼠标县浮在条目上 */
+QListView::item::hover 
+{
+    color:#202020;
+    background-color:#40de5a;
+}
+
+
+
+
+
+
+
+
+QScrollBar::vertical
+{
+    width:18px;
+    background-color: #4c8dae;
+    margin:0px,0px,0px,0px;
+    padding-top:9px;  
+    padding-bottom:9px;
+}
+
+
+QScrollBar::handle:vertical
+{
+    width:18px;
+    background:rgba(0,0,0,25%);
+    border-radius:4px;  
+    min-height:20;
+}
+
+QScrollBar::handle:vertical:hover
+{
+    width:18px;
+    background:rgba(0,0,0,50%);  
+    border-radius:4px;
+    min-height:20;
+}
+
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical  
+{
+    background:rgba(0,0,0,10%);
+    border-radius:4px;
+}
+
+
+ QCheckBox {
+      spacing: 5px;
+      
+  }
+
+
+QCheckBox::indicator:checked 
+{
+    image: url(:/switch/resource/icon/switch/switch_on.png);
+}
+
+QCheckBox::indicator:unchecked 
+{
+     image: url(:/switch/resource/icon/switch/switch_off.png);
+}
+
+
+

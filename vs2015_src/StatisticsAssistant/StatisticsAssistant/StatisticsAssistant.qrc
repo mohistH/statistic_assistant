@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/title_bar">
+        <file>resource/icon/title_bar/min_hover.png</file>
+        <file>resource/icon/title_bar/min_normal.png</file>
+        <file>resource/icon/title_bar/max_hover.png</file>
+        <file>resource/icon/title_bar/max_normal.png</file>
+        <file>resource/icon/title_bar/restore_hover.png</file>
+        <file>resource/icon/title_bar/restore_normal.png</file>
+        <file>resource/icon/title_bar/close_hover.png</file>
+        <file>resource/icon/title_bar/close_normal.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>resource/qss/main.qss</file>
+    </qresource>
+    <qresource prefix="/arrow">
+        <file>resource/icon/combobox/arrow_down.png</file>
+        <file>resource/icon/combobox/arrow_up.png</file>
+    </qresource>
+    <qresource prefix="/switch">
+        <file>resource/icon/switch/switch_off.png</file>
+        <file>resource/icon/switch/switch_on.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>resource/icon/app.png</file>
+        <file>resource/icon/app.ico</file>
+    </qresource>
+</RCC>
